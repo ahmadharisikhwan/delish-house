@@ -233,7 +233,7 @@ button, input, select {
   background-color: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.85);
+
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
   padding: 12px 0;
 }
@@ -315,8 +315,8 @@ button, input, select {
    =================================================================== */
 .hero-section {
   padding-top: 0;
-  padding-bottom: 64px;
-  background: radial-gradient(circle at 80% 20%, rgba(225, 238, 255, 0.7) 0%, rgba(255, 255, 255, 1) 70%);
+
+  background: white;
   position: relative;
   overflow: hidden;
 }
