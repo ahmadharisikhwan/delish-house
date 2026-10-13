@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://delish-house.vercel.app/sitemap.xml
