@@ -1378,3 +1378,10 @@ button, input, select {
     gap: 32px;
   }
 }
+
+
+@media(max-width:1022px){
+  .visual-img-wrapper img{
+    margin-right : -24px
+  }
+}
