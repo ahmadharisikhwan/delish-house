@@ -1039,9 +1039,10 @@ button, input, select {
   background: rgba(15, 23, 42, 0.6);
   backdrop-filter: blur(6px);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 20px;
+  padding: 24px 20px;
+  overflow-y: auto;
   z-index: 2000;
   opacity: 0;
   visibility: hidden;
@@ -1063,6 +1064,9 @@ button, input, select {
   position: relative;
   transform: scale(0.95);
   transition: var(--transition);
+  margin: auto 0;
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
 }
 
 .modal-overlay.active .modal-card {
@@ -1121,6 +1125,17 @@ button, input, select {
 
 .form-group {
   margin-bottom: 18px;
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-label {
@@ -1311,6 +1326,37 @@ button, input, select {
 }
 
 @media (max-width: 768px) {
+  .modal-overlay {
+    padding: 14px;
+  }
+
+  .modal-card {
+    padding: 28px 18px;
+    border-radius: 18px;
+  }
+
+  .modal-header {
+    margin-bottom: 18px;
+  }
+
+  .modal-title {
+    font-size: 1.2rem;
+  }
+
+  .form-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .form-group {
+    margin-bottom: 14px;
+  }
+
+  .modal-submit-btn {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+
   .navbar-wrapper {
     padding: 16px 0;
   }

@@ -123,13 +123,22 @@ export const apiService = {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(menuData)
       });
-      return await res.json();
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        return {
+          success: false,
+          message: data?.message || 'Gagal menambahkan menu.'
+        };
+      }
+
+      return data;
     } catch (err) {
       console.error('Error adding menu:', err);
       return {
-        success: true,
-        message: 'Menu berhasil ditambahkan secara lokal.',
-        data: { id: Date.now(), ...menuData }
+        success: false,
+        message: 'Server backend tidak aktif. Jalankan backend dulu sebelum menambah produk.'
       };
     }
   },

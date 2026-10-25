@@ -17,6 +17,7 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
     category: 'Makanan Berat',
     price: '',
     description: '',
+    image_url: '',
     spice_level: 0,
     is_bestseller: false,
     is_recommended: true
@@ -85,6 +86,22 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
     }
   };
 
+  const handleImageUpload = (event) => {
+    const file = event.target.files?.[0];
+    if (!file) return;
+
+    if (!file.type.startsWith('image/')) {
+      onShowToast('Format file gambar tidak valid. Silakan pilih JPG, PNG, atau WebP.');
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      setNewMenu(prev => ({ ...prev, image_url: reader.result }));
+    };
+    reader.readAsDataURL(file);
+  };
+
   // Handle Tambah Menu Baru
   const handleSaveMenu = async (e) => {
     e.preventDefault();
@@ -93,8 +110,14 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
       return;
     }
 
+    const payload = {
+      ...newMenu,
+      image_url: newMenu.image_url || 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&auto=format&fit=crop&q=80',
+      price: Number(newMenu.price)
+    };
+
     try {
-      const res = await apiService.addMerchantMenu(merchantId, newMenu);
+      const res = await apiService.addMerchantMenu(merchantId, payload);
       if (res.success) {
         onShowToast(`Menu "${newMenu.name}" berhasil ditambahkan!`);
         setShowAddMenuModal(false);
@@ -103,11 +126,14 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
           category: 'Makanan Berat',
           price: '',
           description: '',
+          image_url: '',
           spice_level: 0,
           is_bestseller: false,
           is_recommended: true
         });
         loadMerchantDetails();
+      } else {
+        onShowToast(res.message || 'Gagal menambahkan menu.');
       }
     } catch (err) {
       console.error(err);
@@ -773,6 +799,34 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
                     required
                   />
                 </div>
+              </div>
+
+              <div className="form-group">
+                <label className="form-label">Gambar Produk</label>
+                <input
+                  type="file"
+                  accept="image/*"
+                  className="form-input"
+                  onChange={handleImageUpload}
+                  style={{ padding: '10px 12px' }}
+                />
+                <input
+                  type="url"
+                  className="form-input"
+                  placeholder="Atau masukkan URL gambar produk"
+                  value={newMenu.image_url}
+                  onChange={(e) => setNewMenu({ ...newMenu, image_url: e.target.value })}
+                  style={{ marginTop: '10px' }}
+                />
+                {newMenu.image_url && (
+                  <div style={{ marginTop: '12px', borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.12)' }}>
+                    <img
+                      src={newMenu.image_url}
+                      alt="Preview produk"
+                      style={{ width: '100%', maxHeight: '180px', objectFit: 'cover', display: 'block' }}
+                    />
+                  </div>
+                )}
               </div>
 
               <div className="form-group">
