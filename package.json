@@ -1,0 +1,15 @@
+{
+  "name": "delish-house-project",
+  "version": "2.0.0",
+  "description": "Delish House - Platform UMKM Kuliner Berbasis AI (Fullstack React.js, Node.js Express, & SQLite)",
+  "scripts": {
+    "init:db": "node database/init.js",
+    "dev:backend": "cd backend && npm run dev",
+    "start:backend": "cd backend && npm start",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": ["delish-house", "umkm", "kuliner", "react", "express", "sqlite", "ai"],
+  "author": "Tim Anomali - SMK Antartika 1 Sidoarjo",
+  "license": "ISC"
+}
