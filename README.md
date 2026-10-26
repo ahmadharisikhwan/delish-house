@@ -1,6 +1,7 @@
 # 🍽️ Delish House — Platform UMKM Kuliner Berbasis AI
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <p align="center">
   <img src="assets/logo.webp" alt="Delish House Logo" width="380">
 </p>
@@ -89,12 +90,18 @@ Platform web modern yang memberdayakan pelaku usaha mikro, kecil, dan menengah (
 
 Proyek ini telah direstrukturisasi secara profesional menjadi arsitektur modular terpisah: **Frontend (React.js)**, **Backend (Node.js & Express)**, dan **Database (SQLite)**.
 >>>>>>> 0ab1809 (Delish House)
+=======
+Platform web modern yang memberdayakan pelaku usaha mikro, kecil, dan menengah (UMKM) kuliner di Indonesia melalui integrasi kecerdasan buatan (*Artificial Intelligence*), etalase kuliner interaktif, dan komunikasi instan tanpa potongan komisi.
+
+Proyek ini telah direstrukturisasi secara profesional menjadi arsitektur modular terpisah: **Frontend (React.js)**, **Backend (Node.js & Express)**, dan **Database (SQLite)**.
+>>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
 
 ---
 
 ## 📂 Struktur Direktori Proyek
 
 ```plaintext
+<<<<<<< HEAD
 <<<<<<< HEAD
 delish-house/
 ├── assets/
@@ -111,6 +118,8 @@ delish-house/
 ├── robots.txt                  # Pengaturan perayapan web crawler (SEO)
 ├── sitemap.xml                 # Peta situs terstruktur
 =======
+=======
+>>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
 delish/
 ├── frontend/                   # ⚛️ Aplikasi Antarmuka Pengguna (React.js + Vite)
 │   ├── public/assets/          # Aset logo, ilustrasi, & ikon WebP terkompresi
@@ -145,12 +154,16 @@ delish/
 │
 ├── .gitignore                  # Konfigurasi pengabaian berkas sementara / cache
 ├── package.json                # Skrip root untuk menjalankan aplikasi
+<<<<<<< HEAD
 >>>>>>> 0ab1809 (Delish House)
+=======
+>>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
 └── README.md                   # Dokumentasi resmi repositori
 ```
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 ## 💻 Menjalankan Secara Lokal (Local Development)
 
@@ -226,6 +239,8 @@ Sesuai rancangan pada proposal pengembangan jangka panjang, fitur lanjutan yang 
   Dibuat dengan ❤️ oleh <strong>Tim Anomali — SMK Antartika 1 Sidoarjo</strong> untuk <strong>GTNIC 2026</strong>.
 </p>
 =======
+=======
+>>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
 ## ⚡ Panduan Menjalankan Aplikasi
 
 Pastikan **Node.js** (v18+) dan **npm** sudah terpasang di komputer Anda.
@@ -265,4 +280,7 @@ Buka peramban (*browser*) Anda di: **`http://localhost:3000`**
 - **Nama Tim**: Tim Anomali
 - **Asal Sekolah**: SMK Antartika 1 Sidoarjo
 - **Proyek**: Delish House — Platform UMKM Kuliner Berbasis AI
+<<<<<<< HEAD
 >>>>>>> 0ab1809 (Delish House)
+=======
+>>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
