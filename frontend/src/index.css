@@ -1039,16 +1039,10 @@ button, input, select {
   background: rgba(15, 23, 42, 0.6);
   backdrop-filter: blur(6px);
   display: flex;
-<<<<<<< HEAD
   align-items: flex-start;
   justify-content: center;
   padding: 24px 20px;
   overflow-y: auto;
-=======
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
->>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
   z-index: 2000;
   opacity: 0;
   visibility: hidden;
@@ -1070,12 +1064,9 @@ button, input, select {
   position: relative;
   transform: scale(0.95);
   transition: var(--transition);
-<<<<<<< HEAD
   margin: auto 0;
   max-height: calc(100vh - 48px);
   overflow-y: auto;
-=======
->>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
 }
 
 .modal-overlay.active .modal-card {
@@ -1136,7 +1127,6 @@ button, input, select {
   margin-bottom: 18px;
 }
 
-<<<<<<< HEAD
 .form-grid-2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1148,8 +1138,6 @@ button, input, select {
   flex-direction: column;
 }
 
-=======
->>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
 .form-label {
   display: block;
   font-size: 0.88rem;
@@ -1338,7 +1326,6 @@ button, input, select {
 }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
   .modal-overlay {
     padding: 14px;
   }
@@ -1370,8 +1357,6 @@ button, input, select {
     font-size: 0.95rem;
   }
 
-=======
->>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
   .navbar-wrapper {
     padding: 16px 0;
   }

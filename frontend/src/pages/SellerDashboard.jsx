@@ -17,10 +17,7 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
     category: 'Makanan Berat',
     price: '',
     description: '',
-<<<<<<< HEAD
     image_url: '',
-=======
->>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
     spice_level: 0,
     is_bestseller: false,
     is_recommended: true
@@ -89,7 +86,6 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
     }
   };
 
-<<<<<<< HEAD
   const handleImageUpload = (event) => {
     const file = event.target.files?.[0];
     if (!file) return;
@@ -106,8 +102,6 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
     reader.readAsDataURL(file);
   };
 
-=======
->>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
   // Handle Tambah Menu Baru
   const handleSaveMenu = async (e) => {
     e.preventDefault();
@@ -116,7 +110,6 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
       return;
     }
 
-<<<<<<< HEAD
     const payload = {
       ...newMenu,
       image_url: newMenu.image_url || 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&auto=format&fit=crop&q=80',
@@ -125,10 +118,6 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
 
     try {
       const res = await apiService.addMerchantMenu(merchantId, payload);
-=======
-    try {
-      const res = await apiService.addMerchantMenu(merchantId, newMenu);
->>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
       if (res.success) {
         onShowToast(`Menu "${newMenu.name}" berhasil ditambahkan!`);
         setShowAddMenuModal(false);
@@ -137,20 +126,14 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
           category: 'Makanan Berat',
           price: '',
           description: '',
-<<<<<<< HEAD
           image_url: '',
-=======
->>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
           spice_level: 0,
           is_bestseller: false,
           is_recommended: true
         });
         loadMerchantDetails();
-<<<<<<< HEAD
       } else {
         onShowToast(res.message || 'Gagal menambahkan menu.');
-=======
->>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
       }
     } catch (err) {
       console.error(err);
@@ -819,7 +802,6 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
               </div>
 
               <div className="form-group">
-<<<<<<< HEAD
                 <label className="form-label">Gambar Produk</label>
                 <input
                   type="file"
@@ -848,8 +830,6 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
               </div>
 
               <div className="form-group">
-=======
->>>>>>> 0ab1809c48d58324d0fb29b204d43d5dc395138d
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '6px' }}>
                   <label className="form-label" style={{ marginBottom: 0 }}>Deskripsi Menu</label>
                   <button
