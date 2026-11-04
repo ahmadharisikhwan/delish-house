@@ -20,8 +20,9 @@ export default function Footer() {
             <h4 className="footer-col-title">Menu</h4>
             <ul className="footer-nav-list">
               <li><a href="#beranda" className="footer-link">Beranda</a></li>
-              <li><a href="#masalah" className="footer-link">Fitur</a></li>
-              <li><a href="#solusi" className="footer-link">Manfaat</a></li>
+              <li><a href="#masalah" className="footer-link">Masalah</a></li>
+              <li><a href="#solusi" className="footer-link">Solusi</a></li>
+              <li><a href="#fitur" className="footer-link">Fitur</a></li>
               <li><a href="#ai-tools" className="footer-link">Fitur AI</a></li>
               <li><a href="#katalog" className="footer-link">Katalog Kuliner</a></li>
               <li><a href="#footer" className="footer-link">Tentang Kami</a></li>
