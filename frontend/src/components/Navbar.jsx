@@ -56,7 +56,7 @@ export default function Navbar({ onOpenRegister }) {
                 className={`nav-link ${activeSection === 'masalah' ? 'active' : ''}`}
                 onClick={closeMobile}
               >
-                Fitur
+                Masalah
               </a>
             </li>
             <li className="nav-item">
@@ -65,7 +65,16 @@ export default function Navbar({ onOpenRegister }) {
                 className={`nav-link ${activeSection === 'solusi' ? 'active' : ''}`}
                 onClick={closeMobile}
               >
-                Manfaat
+                Solusi
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="#fitur"
+                className={`nav-link ${activeSection === 'fitur' ? 'active' : ''}`}
+                onClick={closeMobile}
+              >
+                Fitur
               </a>
             </li>
             <li className="nav-item">
