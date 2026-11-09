@@ -782,7 +782,7 @@ export default function SellerDashboard({ currentUser, onLogout, onSwitchToBuyer
                     onChange={(e) => setNewMenu({ ...newMenu, category: e.target.value })}
                   >
                     <option value="Makanan Berat">Makanan Berat</option>
-                    <option value="Minuman & Kopi">Minuman & Kopi</option>
+                    <option value="Minuman">Minuman</option>
                     <option value="Camilan & Gorengan">Camilan & Gorengan</option>
                     <option value="Dessert & Manisan">Dessert & Manisan</option>
                   </select>
