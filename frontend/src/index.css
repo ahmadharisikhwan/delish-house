@@ -253,7 +253,7 @@ button, input, select {
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
 }
 
 .nav-link {

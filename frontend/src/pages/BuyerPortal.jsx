@@ -4,7 +4,7 @@ import { apiService } from '../services/api';
 const categories = [
   { id: 'all', label: 'Semua Sajian' },
   { id: 'Makanan Berat', label: 'Makanan Berat' },
-  { id: 'Minuman & Kopi', label: 'Minuman & Kopi' },
+  { id: 'Minuman', label: 'Minuman' },
   { id: 'Camilan & Gorengan', label: 'Camilan & Gorengan' },
   { id: 'Dessert & Manisan', label: 'Dessert & Manisan' }
 ];
@@ -235,7 +235,7 @@ export default function BuyerPortal({ currentUser, onLogout, onSwitchToSeller, o
               <button
                 type="button"
                 className="chip-btn"
-                onClick={() => { setSelectedCategory('Minuman & Kopi'); setActiveTab('explore'); }}
+                onClick={() => { setSelectedCategory('Minuman'); setActiveTab('explore'); }}
               >
                 🍧 Minuman Segar
               </button>

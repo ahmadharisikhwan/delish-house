@@ -4,7 +4,7 @@ import { apiService } from '../services/api';
 const categories = [
   { id: 'all', label: 'Semua Menu' },
   { id: 'Makanan Berat', label: 'Makanan Berat' },
-  { id: 'Minuman & Kopi', label: 'Minuman & Kopi' },
+  { id: 'Minuman', label: 'Minuman' },
   { id: 'Camilan & Gorengan', label: 'Camilan' },
   { id: 'Dessert & Manisan', label: 'Dessert' }
 ];

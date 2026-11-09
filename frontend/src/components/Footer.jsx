@@ -25,6 +25,7 @@ export default function Footer() {
               <li><a href="#fitur" className="footer-link">Fitur</a></li>
               <li><a href="#ai-tools" className="footer-link">Fitur AI</a></li>
               <li><a href="#katalog" className="footer-link">Katalog Kuliner</a></li>
+              <li><a href="#cara-kerja" className="footer-link">Cara Kerja</a></li>
               <li><a href="#footer" className="footer-link">Tentang Kami</a></li>
             </ul>
           </div>

@@ -97,6 +97,15 @@ export default function Navbar({ onOpenRegister }) {
             </li>
             <li className="nav-item">
               <a
+                href="#cara-kerja"
+                className={`nav-link ${activeSection === 'cara-kerja' ? 'active' : ''}`}
+                onClick={closeMobile}
+              >
+                Cara Kerja
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
                 href="#statistik"
                 className={`nav-link ${activeSection === 'statistik' ? 'active' : ''}`}
                 onClick={closeMobile}

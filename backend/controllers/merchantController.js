@@ -91,7 +91,7 @@ const registerPartnership = async (req, res) => {
     `;
     const partResult = await db.run(partnershipSql, [vendorName, vendorCategory, vendorCity, vendorPhone, notes || '']);
 
-    // 2. Also register directly into merchants table so seller immediately has an active dashboard!
+    // 2. Register directly into merchants table
     const cleanPhone = vendorPhone.replace(/\D/g, '');
     const waNumber = cleanPhone.startsWith('0') ? '62' + cleanPhone.slice(1) : cleanPhone;
 
@@ -150,7 +150,7 @@ const registerPartnership = async (req, res) => {
   }
 };
 
-// POST /api/merchants/:id/menus - Seller adds a new menu item
+// POST /api/merchants/:id/menus
 const addMenu = async (req, res) => {
   try {
     const { id } = req.params;
@@ -195,7 +195,7 @@ const addMenu = async (req, res) => {
   }
 };
 
-// DELETE /api/menus/:id - Seller deletes a menu item
+// DELETE /api/menus/:id
 const deleteMenu = async (req, res) => {
   try {
     const { id } = req.params;
@@ -207,7 +207,7 @@ const deleteMenu = async (req, res) => {
   }
 };
 
-// PUT /api/merchants/:id - Seller updates shop profile
+// PUT /api/merchants/:id
 const updateMerchant = async (req, res) => {
   try {
     const { id } = req.params;
@@ -234,7 +234,7 @@ const updateMerchant = async (req, res) => {
   }
 };
 
-// POST /api/orders - Buyer places order
+// POST /api/orders
 const createOrder = async (req, res) => {
   try {
     const { merchant_id, buyer_name, buyer_phone, items_summary, total_price, notes } = req.body;

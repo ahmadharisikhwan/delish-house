@@ -290,7 +290,7 @@ export default function RegisterModal({ isOpen, onClose, onLoginSuccess, onShowT
                   onChange={(e) => setSellerForm({ ...sellerForm, vendorCategory: e.target.value })}
                 >
                   <option value="Makanan Berat">Makanan Berat (Nasi, Mie, Bakso)</option>
-                  <option value="Minuman & Kopi">Minuman & Kopi</option>
+                  <option value="Minuman">Minuman</option>
                   <option value="Camilan & Gorengan">Camilan & Gorengan</option>
                   <option value="Dessert & Manisan">Dessert & Kue Tradisional</option>
                 </select>
